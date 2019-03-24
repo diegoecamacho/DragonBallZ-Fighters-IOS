@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE3AA3CD2247F14100364CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3CC2247F14100364CCF /* AppDelegate.swift */; };
+		CE3AA3CF2247F14100364CCF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3CE2247F14100364CCF /* GameScene.sks */; };
+		CE3AA3D12247F14100364CCF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3D02247F14100364CCF /* Actions.sks */; };
+		CE3AA3D32247F14100364CCF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3D22247F14100364CCF /* GameScene.swift */; };
+		CE3AA3D52247F14100364CCF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3D42247F14100364CCF /* GameViewController.swift */; };
+		CE3AA3D82247F14100364CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3D62247F14100364CCF /* Main.storyboard */; };
+		CE3AA3DA2247F14300364CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3D92247F14300364CCF /* Assets.xcassets */; };
+		CE3AA3DD2247F14300364CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3DB2247F14300364CCF /* LaunchScreen.storyboard */; };
+		CE3AA3E82247F14300364CCF /* Dragonball_FightersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3E72247F14300364CCF /* Dragonball_FightersTests.swift */; };
+		CE3AA3F32247F14300364CCF /* Dragonball_FightersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3F22247F14300364CCF /* Dragonball_FightersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE3AA3E42247F14300364CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3AA3C12247F14100364CCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3AA3C82247F14100364CCF;
+			remoteInfo = "Dragonball Fighters";
+		};
+		CE3AA3EF2247F14300364CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3AA3C12247F14100364CCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3AA3C82247F14100364CCF;
+			remoteInfo = "Dragonball Fighters";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE3AA3C92247F14100364CCF /* Dragonball Fighters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dragonball Fighters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3AA3CC2247F14100364CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE3AA3CE2247F14100364CCF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CE3AA3D02247F14100364CCF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		CE3AA3D22247F14100364CCF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CE3AA3D42247F14100364CCF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CE3AA3D72247F14100364CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE3AA3D92247F14300364CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE3AA3DC2247F14300364CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE3AA3DE2247F14300364CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3AA3E32247F14300364CCF /* Dragonball FightersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dragonball FightersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3AA3E72247F14300364CCF /* Dragonball_FightersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragonball_FightersTests.swift; sourceTree = "<group>"; };
+		CE3AA3E92247F14300364CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3AA3EE2247F14300364CCF /* Dragonball FightersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dragonball FightersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3AA3F22247F14300364CCF /* Dragonball_FightersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragonball_FightersUITests.swift; sourceTree = "<group>"; };
+		CE3AA3F42247F14300364CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE3AA3C62247F14100364CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3AA3E02247F14300364CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3AA3EB2247F14300364CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE3AA3C02247F14100364CCF = {
+			isa = PBXGroup;
+			children = (
+				CE3AA3CB2247F14100364CCF /* Dragonball Fighters */,
+				CE3AA3E62247F14300364CCF /* Dragonball FightersTests */,
+				CE3AA3F12247F14300364CCF /* Dragonball FightersUITests */,
+				CE3AA3CA2247F14100364CCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE3AA3CA2247F14100364CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA3C92247F14100364CCF /* Dragonball Fighters.app */,
+				CE3AA3E32247F14300364CCF /* Dragonball FightersTests.xctest */,
+				CE3AA3EE2247F14300364CCF /* Dragonball FightersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE3AA3CB2247F14100364CCF /* Dragonball Fighters */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA3CC2247F14100364CCF /* AppDelegate.swift */,
+				CE3AA3CE2247F14100364CCF /* GameScene.sks */,
+				CE3AA3D02247F14100364CCF /* Actions.sks */,
+				CE3AA3D22247F14100364CCF /* GameScene.swift */,
+				CE3AA3D42247F14100364CCF /* GameViewController.swift */,
+				CE3AA3D62247F14100364CCF /* Main.storyboard */,
+				CE3AA3D92247F14300364CCF /* Assets.xcassets */,
+				CE3AA3DB2247F14300364CCF /* LaunchScreen.storyboard */,
+				CE3AA3DE2247F14300364CCF /* Info.plist */,
+			);
+			path = "Dragonball Fighters";
+			sourceTree = "<group>";
+		};
+		CE3AA3E62247F14300364CCF /* Dragonball FightersTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA3E72247F14300364CCF /* Dragonball_FightersTests.swift */,
+				CE3AA3E92247F14300364CCF /* Info.plist */,
+			);
+			path = "Dragonball FightersTests";
+			sourceTree = "<group>";
+		};
+		CE3AA3F12247F14300364CCF /* Dragonball FightersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA3F22247F14300364CCF /* Dragonball_FightersUITests.swift */,
+				CE3AA3F42247F14300364CCF /* Info.plist */,
+			);
+			path = "Dragonball FightersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE3AA3C82247F14100364CCF /* Dragonball Fighters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3AA3F72247F14300364CCF /* Build configuration list for PBXNativeTarget "Dragonball Fighters" */;
+			buildPhases = (
+				CE3AA3C52247F14100364CCF /* Sources */,
+				CE3AA3C62247F14100364CCF /* Frameworks */,
+				CE3AA3C72247F14100364CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dragonball Fighters";
+			productName = "Dragonball Fighters";
+			productReference = CE3AA3C92247F14100364CCF /* Dragonball Fighters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE3AA3E22247F14300364CCF /* Dragonball FightersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3AA3FA2247F14300364CCF /* Build configuration list for PBXNativeTarget "Dragonball FightersTests" */;
+			buildPhases = (
+				CE3AA3DF2247F14300364CCF /* Sources */,
+				CE3AA3E02247F14300364CCF /* Frameworks */,
+				CE3AA3E12247F14300364CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE3AA3E52247F14300364CCF /* PBXTargetDependency */,
+			);
+			name = "Dragonball FightersTests";
+			productName = "Dragonball FightersTests";
+			productReference = CE3AA3E32247F14300364CCF /* Dragonball FightersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE3AA3ED2247F14300364CCF /* Dragonball FightersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3AA3FD2247F14300364CCF /* Build configuration list for PBXNativeTarget "Dragonball FightersUITests" */;
+			buildPhases = (
+				CE3AA3EA2247F14300364CCF /* Sources */,
+				CE3AA3EB2247F14300364CCF /* Frameworks */,
+				CE3AA3EC2247F14300364CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE3AA3F02247F14300364CCF /* PBXTargetDependency */,
+			);
+			name = "Dragonball FightersUITests";
+			productName = "Dragonball FightersUITests";
+			productReference = CE3AA3EE2247F14300364CCF /* Dragonball FightersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE3AA3C12247F14100364CCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Diego Camacho";
+				TargetAttributes = {
+					CE3AA3C82247F14100364CCF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CE3AA3E22247F14300364CCF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CE3AA3C82247F14100364CCF;
+					};
+					CE3AA3ED2247F14300364CCF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CE3AA3C82247F14100364CCF;
+					};
+				};
+			};
+			buildConfigurationList = CE3AA3C42247F14100364CCF /* Build configuration list for PBXProject "Dragonball Fighters" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE3AA3C02247F14100364CCF;
+			productRefGroup = CE3AA3CA2247F14100364CCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE3AA3C82247F14100364CCF /* Dragonball Fighters */,
+				CE3AA3E22247F14300364CCF /* Dragonball FightersTests */,
+				CE3AA3ED2247F14300364CCF /* Dragonball FightersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE3AA3C72247F14100364CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3AA3D82247F14100364CCF /* Main.storyboard in Resources */,
+				CE3AA3CF2247F14100364CCF /* GameScene.sks in Resources */,
+				CE3AA3DA2247F14300364CCF /* Assets.xcassets in Resources */,
+				CE3AA3DD2247F14300364CCF /* LaunchScreen.storyboard in Resources */,
+				CE3AA3D12247F14100364CCF /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3AA3E12247F14300364CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3AA3EC2247F14300364CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE3AA3C52247F14100364CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3AA3D32247F14100364CCF /* GameScene.swift in Sources */,
+				CE3AA3D52247F14100364CCF /* GameViewController.swift in Sources */,
+				CE3AA3CD2247F14100364CCF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3AA3DF2247F14300364CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3AA3E82247F14300364CCF /* Dragonball_FightersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3AA3EA2247F14300364CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3AA3F32247F14300364CCF /* Dragonball_FightersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE3AA3E52247F14300364CCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3AA3C82247F14100364CCF /* Dragonball Fighters */;
+			targetProxy = CE3AA3E42247F14300364CCF /* PBXContainerItemProxy */;
+		};
+		CE3AA3F02247F14300364CCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3AA3C82247F14100364CCF /* Dragonball Fighters */;
+			targetProxy = CE3AA3EF2247F14300364CCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE3AA3D62247F14100364CCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3AA3D72247F14100364CCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE3AA3DB2247F14300364CCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3AA3DC2247F14300364CCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE3AA3F52247F14300364CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE3AA3F62247F14300364CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE3AA3F82247F14300364CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T62L7QEY97;
+				INFOPLIST_FILE = "Dragonball Fighters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CamachoProductions.Dragonball-Fighters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE3AA3F92247F14300364CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T62L7QEY97;
+				INFOPLIST_FILE = "Dragonball Fighters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CamachoProductions.Dragonball-Fighters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE3AA3FB2247F14300364CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T62L7QEY97;
+				INFOPLIST_FILE = "Dragonball FightersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CamachoProductions.Dragonball-FightersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dragonball Fighters.app/Dragonball Fighters";
+			};
+			name = Debug;
+		};
+		CE3AA3FC2247F14300364CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T62L7QEY97;
+				INFOPLIST_FILE = "Dragonball FightersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CamachoProductions.Dragonball-FightersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dragonball Fighters.app/Dragonball Fighters";
+			};
+			name = Release;
+		};
+		CE3AA3FE2247F14300364CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T62L7QEY97;
+				INFOPLIST_FILE = "Dragonball FightersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CamachoProductions.Dragonball-FightersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dragonball Fighters";
+			};
+			name = Debug;
+		};
+		CE3AA3FF2247F14300364CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T62L7QEY97;
+				INFOPLIST_FILE = "Dragonball FightersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CamachoProductions.Dragonball-FightersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dragonball Fighters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE3AA3C42247F14100364CCF /* Build configuration list for PBXProject "Dragonball Fighters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3AA3F52247F14300364CCF /* Debug */,
+				CE3AA3F62247F14300364CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3AA3F72247F14300364CCF /* Build configuration list for PBXNativeTarget "Dragonball Fighters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3AA3F82247F14300364CCF /* Debug */,
+				CE3AA3F92247F14300364CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3AA3FA2247F14300364CCF /* Build configuration list for PBXNativeTarget "Dragonball FightersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3AA3FB2247F14300364CCF /* Debug */,
+				CE3AA3FC2247F14300364CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3AA3FD2247F14300364CCF /* Build configuration list for PBXNativeTarget "Dragonball FightersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3AA3FE2247F14300364CCF /* Debug */,
+				CE3AA3FF2247F14300364CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE3AA3C12247F14100364CCF /* Project object */;
+}
