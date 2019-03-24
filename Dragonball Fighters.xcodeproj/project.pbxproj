@@ -15,8 +15,8 @@
 		CE3AA3D82247F14100364CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3D62247F14100364CCF /* Main.storyboard */; };
 		CE3AA3DA2247F14300364CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3D92247F14300364CCF /* Assets.xcassets */; };
 		CE3AA3DD2247F14300364CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3DB2247F14300364CCF /* LaunchScreen.storyboard */; };
-		CE3AA3E82247F14300364CCF /* Dragonball_FightersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3E72247F14300364CCF /* Dragonball_FightersTests.swift */; };
-		CE3AA3F32247F14300364CCF /* Dragonball_FightersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3F22247F14300364CCF /* Dragonball_FightersUITests.swift */; };
+		CE3AA4022247F3FB00364CCF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA4012247F3FB00364CCF /* MenuButton.swift */; };
+		CE3AA4052247F4D400364CCF /* MenuButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA4042247F4D400364CCF /* MenuButtonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +48,9 @@
 		CE3AA3DC2247F14300364CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3AA3DE2247F14300364CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3AA3E32247F14300364CCF /* Dragonball FightersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dragonball FightersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE3AA3E72247F14300364CCF /* Dragonball_FightersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragonball_FightersTests.swift; sourceTree = "<group>"; };
-		CE3AA3E92247F14300364CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3AA3EE2247F14300364CCF /* Dragonball FightersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dragonball FightersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE3AA3F22247F14300364CCF /* Dragonball_FightersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragonball_FightersUITests.swift; sourceTree = "<group>"; };
-		CE3AA3F42247F14300364CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3AA4012247F3FB00364CCF /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		CE3AA4042247F4D400364CCF /* MenuButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				CE3AA3CB2247F14100364CCF /* Dragonball Fighters */,
-				CE3AA3E62247F14300364CCF /* Dragonball FightersTests */,
-				CE3AA3F12247F14300364CCF /* Dragonball FightersUITests */,
 				CE3AA3CA2247F14100364CCF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +99,7 @@
 		CE3AA3CB2247F14100364CCF /* Dragonball Fighters */ = {
 			isa = PBXGroup;
 			children = (
+				CE3AA4002247F3BC00364CCF /* UI */,
 				CE3AA3CC2247F14100364CCF /* AppDelegate.swift */,
 				CE3AA3CE2247F14100364CCF /* GameScene.sks */,
 				CE3AA3D02247F14100364CCF /* Actions.sks */,
@@ -116,22 +113,21 @@
 			path = "Dragonball Fighters";
 			sourceTree = "<group>";
 		};
-		CE3AA3E62247F14300364CCF /* Dragonball FightersTests */ = {
+		CE3AA4002247F3BC00364CCF /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CE3AA3E72247F14300364CCF /* Dragonball_FightersTests.swift */,
-				CE3AA3E92247F14300364CCF /* Info.plist */,
+				CE3AA4032247F4C100364CCF /* Buttons */,
 			);
-			path = "Dragonball FightersTests";
+			path = UI;
 			sourceTree = "<group>";
 		};
-		CE3AA3F12247F14300364CCF /* Dragonball FightersUITests */ = {
+		CE3AA4032247F4C100364CCF /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				CE3AA3F22247F14300364CCF /* Dragonball_FightersUITests.swift */,
-				CE3AA3F42247F14300364CCF /* Info.plist */,
+				CE3AA4012247F3FB00364CCF /* MenuButton.swift */,
+				CE3AA4042247F4D400364CCF /* MenuButtonController.swift */,
 			);
-			path = "Dragonball FightersUITests";
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3AA4052247F4D400364CCF /* MenuButtonController.swift in Sources */,
 				CE3AA3D32247F14100364CCF /* GameScene.swift in Sources */,
+				CE3AA4022247F3FB00364CCF /* MenuButton.swift in Sources */,
 				CE3AA3D52247F14100364CCF /* GameViewController.swift in Sources */,
 				CE3AA3CD2247F14100364CCF /* AppDelegate.swift in Sources */,
 			);
@@ -277,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3AA3E82247F14300364CCF /* Dragonball_FightersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3AA3F32247F14300364CCF /* Dragonball_FightersUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
