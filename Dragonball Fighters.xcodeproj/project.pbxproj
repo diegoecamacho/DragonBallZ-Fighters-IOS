@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE08C65A22480D2900C24673 /* ControlsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08C65922480D2900C24673 /* ControlsScene.swift */; };
+		CE08C65C22480D4100C24673 /* ControlsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE08C65B22480D4100C24673 /* ControlsScene.sks */; };
+		CE08C65E224810CB00C24673 /* DialogScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE08C65D224810CB00C24673 /* DialogScene.sks */; };
+		CE08C660224810EA00C24673 /* DialogScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08C65F224810EA00C24673 /* DialogScene.swift */; };
+		CE08C662224823EF00C24673 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08C661224823EF00C24673 /* GameScene.swift */; };
+		CE08C664224823F900C24673 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE08C663224823F900C24673 /* GameScene.sks */; };
+		CE08C667224824D600C24673 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08C666224824D600C24673 /* Actor.swift */; };
+		CE08C66A2248335E00C24673 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08C6692248335E00C24673 /* GameController.swift */; };
+		CE08C66C22484E9F00C24673 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08C66B22484E9F00C24673 /* Character.swift */; };
 		CE3AA3CD2247F14100364CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3CC2247F14100364CCF /* AppDelegate.swift */; };
-		CE3AA3CF2247F14100364CCF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3CE2247F14100364CCF /* GameScene.sks */; };
 		CE3AA3D12247F14100364CCF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3D02247F14100364CCF /* Actions.sks */; };
-		CE3AA3D32247F14100364CCF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3D22247F14100364CCF /* GameScene.swift */; };
 		CE3AA3D52247F14100364CCF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA3D42247F14100364CCF /* GameViewController.swift */; };
 		CE3AA3D82247F14100364CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3D62247F14100364CCF /* Main.storyboard */; };
 		CE3AA3DA2247F14300364CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3D92247F14300364CCF /* Assets.xcassets */; };
 		CE3AA3DD2247F14300364CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA3DB2247F14300364CCF /* LaunchScreen.storyboard */; };
 		CE3AA4022247F3FB00364CCF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA4012247F3FB00364CCF /* MenuButton.swift */; };
 		CE3AA4052247F4D400364CCF /* MenuButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA4042247F4D400364CCF /* MenuButtonController.swift */; };
+		CE3AA40A2247F7F600364CCF /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA4092247F7F600364CCF /* MenuScene.sks */; };
+		CE3AA40C2247FBCB00364CCF /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA40B2247FBCB00364CCF /* MenuScene.swift */; };
+		CE8182682248630500536FEB /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8182672248630500536FEB /* HealthBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE08C65922480D2900C24673 /* ControlsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsScene.swift; sourceTree = "<group>"; };
+		CE08C65B22480D4100C24673 /* ControlsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ControlsScene.sks; sourceTree = "<group>"; };
+		CE08C65D224810CB00C24673 /* DialogScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DialogScene.sks; sourceTree = "<group>"; };
+		CE08C65F224810EA00C24673 /* DialogScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogScene.swift; sourceTree = "<group>"; };
+		CE08C661224823EF00C24673 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CE08C663224823F900C24673 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CE08C666224824D600C24673 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		CE08C6692248335E00C24673 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		CE08C66B22484E9F00C24673 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		CE3AA3C92247F14100364CCF /* Dragonball Fighters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dragonball Fighters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3AA3CC2247F14100364CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE3AA3CE2247F14100364CCF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		CE3AA3D02247F14100364CCF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		CE3AA3D22247F14100364CCF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CE3AA3D42247F14100364CCF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CE3AA3D72247F14100364CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3AA3D92247F14300364CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +68,9 @@
 		CE3AA3EE2247F14300364CCF /* Dragonball FightersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dragonball FightersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3AA4012247F3FB00364CCF /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		CE3AA4042247F4D400364CCF /* MenuButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonController.swift; sourceTree = "<group>"; };
+		CE3AA4092247F7F600364CCF /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		CE3AA40B2247FBCB00364CCF /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		CE8182672248630500536FEB /* HealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE08C665224824BB00C24673 /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				CE08C666224824D600C24673 /* Actor.swift */,
+				CE08C66B22484E9F00C24673 /* Character.swift */,
+			);
+			path = Actor;
+			sourceTree = "<group>";
+		};
+		CE08C6682248334400C24673 /* GameController */ = {
+			isa = PBXGroup;
+			children = (
+				CE08C6692248335E00C24673 /* GameController.swift */,
+			);
+			path = GameController;
+			sourceTree = "<group>";
+		};
 		CE3AA3C02247F14100364CCF = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +136,12 @@
 		CE3AA3CB2247F14100364CCF /* Dragonball Fighters */ = {
 			isa = PBXGroup;
 			children = (
+				CE08C6682248334400C24673 /* GameController */,
+				CE08C665224824BB00C24673 /* Actor */,
+				CE3AA4062247F7A300364CCF /* Scene */,
 				CE3AA4002247F3BC00364CCF /* UI */,
 				CE3AA3CC2247F14100364CCF /* AppDelegate.swift */,
-				CE3AA3CE2247F14100364CCF /* GameScene.sks */,
 				CE3AA3D02247F14100364CCF /* Actions.sks */,
-				CE3AA3D22247F14100364CCF /* GameScene.swift */,
 				CE3AA3D42247F14100364CCF /* GameViewController.swift */,
 				CE3AA3D62247F14100364CCF /* Main.storyboard */,
 				CE3AA3D92247F14300364CCF /* Assets.xcassets */,
@@ -116,6 +154,7 @@
 		CE3AA4002247F3BC00364CCF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE818266224862F600536FEB /* HealthBar */,
 				CE3AA4032247F4C100364CCF /* Buttons */,
 			);
 			path = UI;
@@ -128,6 +167,45 @@
 				CE3AA4042247F4D400364CCF /* MenuButtonController.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		CE3AA4062247F7A300364CCF /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA4082247F7C100364CCF /* Spritekit Scene */,
+				CE3AA4072247F7B200364CCF /* Code */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		CE3AA4072247F7B200364CCF /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				CE08C661224823EF00C24673 /* GameScene.swift */,
+				CE08C65922480D2900C24673 /* ControlsScene.swift */,
+				CE3AA40B2247FBCB00364CCF /* MenuScene.swift */,
+				CE08C65F224810EA00C24673 /* DialogScene.swift */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		CE3AA4082247F7C100364CCF /* Spritekit Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA4092247F7F600364CCF /* MenuScene.sks */,
+				CE08C65B22480D4100C24673 /* ControlsScene.sks */,
+				CE08C65D224810CB00C24673 /* DialogScene.sks */,
+				CE08C663224823F900C24673 /* GameScene.sks */,
+			);
+			name = "Spritekit Scene";
+			sourceTree = "<group>";
+		};
+		CE818266224862F600536FEB /* HealthBar */ = {
+			isa = PBXGroup;
+			children = (
+				CE8182672248630500536FEB /* HealthBar.swift */,
+			);
+			path = HealthBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3AA3D82247F14100364CCF /* Main.storyboard in Resources */,
-				CE3AA3CF2247F14100364CCF /* GameScene.sks in Resources */,
 				CE3AA3DA2247F14300364CCF /* Assets.xcassets in Resources */,
 				CE3AA3DD2247F14300364CCF /* LaunchScreen.storyboard in Resources */,
+				CE08C65C22480D4100C24673 /* ControlsScene.sks in Resources */,
+				CE3AA40A2247F7F600364CCF /* MenuScene.sks in Resources */,
+				CE08C65E224810CB00C24673 /* DialogScene.sks in Resources */,
+				CE08C664224823F900C24673 /* GameScene.sks in Resources */,
 				CE3AA3D12247F14100364CCF /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,9 +345,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3AA4052247F4D400364CCF /* MenuButtonController.swift in Sources */,
-				CE3AA3D32247F14100364CCF /* GameScene.swift in Sources */,
+				CE8182682248630500536FEB /* HealthBar.swift in Sources */,
+				CE08C66A2248335E00C24673 /* GameController.swift in Sources */,
+				CE08C66C22484E9F00C24673 /* Character.swift in Sources */,
+				CE08C660224810EA00C24673 /* DialogScene.swift in Sources */,
+				CE08C662224823EF00C24673 /* GameScene.swift in Sources */,
+				CE3AA40C2247FBCB00364CCF /* MenuScene.swift in Sources */,
 				CE3AA4022247F3FB00364CCF /* MenuButton.swift in Sources */,
 				CE3AA3D52247F14100364CCF /* GameViewController.swift in Sources */,
+				CE08C667224824D600C24673 /* Actor.swift in Sources */,
+				CE08C65A22480D2900C24673 /* ControlsScene.swift in Sources */,
 				CE3AA3CD2247F14100364CCF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

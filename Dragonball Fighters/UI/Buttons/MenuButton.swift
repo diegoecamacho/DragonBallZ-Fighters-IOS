@@ -38,7 +38,7 @@ class MenuButton: SKSpriteNode {
         super.init(coder: aDecoder)
     }
     
-    init(fileNamed: String, hoverSpriteFileName: String){
+    init(fileNamed: String, sceneString: String , hoverSpriteFileName: String){
         let tempTexture = SKTexture(imageNamed: fileNamed)
         super.init(texture: tempTexture, color: UIColor.clear, size: tempTexture.size())
         
