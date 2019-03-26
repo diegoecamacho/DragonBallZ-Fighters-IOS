@@ -8,101 +8,161 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     var gameController : GameController = GameController()
     
-    var player : Character?
+    var playerA : Fighter?
+    var playerB : Character?
     
     var Healthbar1 : HealthBar?
+    var Healthbar2 : HealthBar?
     
+    var JoystickSprite  = SKLabelNode()
+    var JoystickBackground  = SKLabelNode()
     
-    fileprivate func InitializeButton() {
+    let joystick = TLAnalogJoystick(withDiameter: 300)
+    
+ 
+    
+    fileprivate func Initialize() {
         
-        guard let playerTemp = childNode(withName: "PlayerA") as? Character else { return }
-        player = playerTemp
+        physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         
-        guard let upArrowButton = childNode(withName: "UpArrow") as? MenuButton else { return }
-        gameController.AddCallback(CallbackEnum: .UpArrow, node: upArrowButton, callback: MoveUp)
+        guard let playerTempA = childNode(withName: "PlayerA") as? Fighter else { return }
+        playerA = playerTempA
         
-        guard let downArrowButton = childNode(withName: "DownArrow") as? MenuButton else { return }
-        gameController.AddCallback(CallbackEnum: .DownArrow, node: downArrowButton, callback: MoveDown)
+        playerA?.Initialize()
         
-        guard let leftArrowButton = childNode(withName: "LeftArrow") as? MenuButton else { return }
-        gameController.AddCallback(CallbackEnum: .LeftArrow, node: leftArrowButton, callback: MoveLeft)
+        let anologbackground = UIImage(named: "jSubstrate")
+        joystick.baseImage = anologbackground
+        let analogForeground = UIImage(named: "jStick")
+        joystick.handleImage = analogForeground
+        joystick.position = CGPoint(x: -675, y: -250)
         
-        guard let rightArrowButton = childNode(withName: "RightArrow") as? MenuButton else { return }
-        gameController.AddCallback(CallbackEnum: .RightArrow, node: rightArrowButton, callback: MoveRight)
+        addChild(joystick)
         
-        guard let AButton = childNode(withName: "AButton") as? MenuButton else { return }
+        joystick.on(.move) { [unowned self] joystick in
+            let pVelocity = joystick.velocity;
+            print(pVelocity.x)
+            self.playerA?.Move(x: pVelocity.x, y: pVelocity.y)
+            
+        }
+        
+        playerA?.EnablePhysicsBody(category: PhysicsCategories.Player)
+        
+        guard let playerTempB = childNode(withName: "PlayerB") as? Character else { return }
+        playerB = playerTempB
+        
+        playerB?.EnablePhysicsBody(category: PhysicsCategories.Enemy)
+        
+        guard let health1 = childNode(withName: "HealthBar1") as? HealthBar else { return }
+        health1.loadHealth(tracking: playerA!)
+        Healthbar1 = health1
+        
+        guard let health2 = childNode(withName: "HealthBar2") as? HealthBar else { return }
+        health2.loadHealth(tracking: playerB!)
+        Healthbar2 = health2
+        
+        guard let AButton = childNode(withName: "Hitbutton") as? MenuButton else { return }
         gameController.AddCallback(CallbackEnum: .AButton, node: AButton, callback: Hit)
         
-        guard let BButton = childNode(withName: "BButton") as? MenuButton else { return }
-        gameController.AddCallback(CallbackEnum: .BButton, node: BButton, callback: Hit)
+
     }
-    
-    override func sceneDidLoad() {
-        InitializeButton()
+ 
+    override func didMove(to view: SKView) {
+         physicsWorld.contactDelegate = self
         
-        guard let health = childNode(withName: "HealthBar") as? HealthBar else { return }
-        health.loadHealth()
         
-    }
-    
-    func MoveUp() -> Void {
-        player!.MoveUp()
-    }
-    
-    func MoveDown() -> Void {
-        player!.MoveDown()
-    }
-    
-    func MoveLeft() -> Void {
-        player!.MoveLeft()
-    }
-    
-    func MoveRight() -> Void {
-        player!.MoveRight()
+        
+        Initialize()
+        
+        
     }
     
     func Hit() -> Void {
-      player!.Health = player!.Health - 10
-        print(player!.Health)
-        Healthbar1?.UpdateFill(health: CGFloat(player!.Health))
+        if (playerA?.hitValid)! {
+            playerB!.Health? -=  10
+            
+            UpdateHealth()
+        }
         
+    }
+    
+    func UpdateHealth(){
+        Healthbar1?.UpdateFill()
+        Healthbar2?.UpdateFill()
     }
     
     override func update(_ currentTime: TimeInterval) {
-        WorldBounds()
-        Healthbar1!.UpdateFill(health: CGFloat((player!.Health)))
-    }
     
-    func WorldBounds(){
-        BoundsCheck(node: player!)
-    }
-    
-    func BoundsCheck(node: SKSpriteNode){
-        let  screenSize = view!.bounds
-        let  screenHeight = screenSize.height + 100
-        let  screenWidth = screenSize.width + 200
-        
-        if node.position.x < -screenWidth{
-            node.position.x = -screenWidth
-        }
-        else if node.position.x > screenWidth{
-            node.position.x = screenWidth
-        }
-        
-        if node.position.y < -screenHeight{
-            node.position.y = -screenHeight
-        }
-        else if node.position.y > screenHeight{
-            node.position.y = screenHeight
-        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first?.location(in: self) else { return }
-        gameController.handle(point: touch)
+        
+        if gameController.handle(point: touch)  {
+            return
+        }
+        
+        playerA?.SpawnBullet(scene: self)
     }
     
+    fileprivate func BulletCollisionHandle(_ contact: SKPhysicsContact) {
+        if contact.bodyA.categoryBitMask == PhysicsCategories.Bullets || contact.bodyB.categoryBitMask == PhysicsCategories.Bullets {
+            var character: Character?
+            if let body = contact.bodyA.node! as? Character {
+                character = body
+                contact.bodyB.node?.removeFromParent()
+            }
+            else {
+                if let body = contact.bodyB.node! as? Character{
+                    character = body
+                    contact.bodyA.node?.removeFromParent()
+                }
+                else{
+                    return
+                }
+            }
+            character?.TakeDamage(damage: 5)
+            UpdateHealth()
+            
+        }
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        BulletCollisionHandle(contact)
+        
+        
+        
+        if contact.bodyA.categoryBitMask == PhysicsCategories.Player || contact.bodyB.categoryBitMask == PhysicsCategories.Player{
+            if contact.bodyA.categoryBitMask == PhysicsCategories.Enemy {
+                playerA?.hitValid = true
+            }
+            else {
+                if contact.bodyB.categoryBitMask == PhysicsCategories.Enemy {
+                    playerA?.hitValid = true
+                }
+                else{
+                    return
+                }
+            }
+        }
+    }
+    
+    func didEnd(_ contact: SKPhysicsContact) {
+        if contact.bodyA.categoryBitMask == PhysicsCategories.Player || contact.bodyB.categoryBitMask == PhysicsCategories.Player{
+            if contact.bodyA.categoryBitMask == PhysicsCategories.Enemy {
+                playerA?.hitValid = false
+            }
+            else {
+                if contact.bodyB.categoryBitMask == PhysicsCategories.Enemy {
+                    playerA?.hitValid = false
+                }
+                else{
+                    return
+                }
+            }
+        }
+    
+    }
 }

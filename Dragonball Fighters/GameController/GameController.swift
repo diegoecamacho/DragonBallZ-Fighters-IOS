@@ -60,12 +60,13 @@ class GameController{
       }
     }
     
-    public func handle(point : CGPoint){
+    public func handle(point : CGPoint) -> Bool{
         for button in ButtonsList{
             if button.spriteNode!.contains(point){
                 button.CallBack?()
+                return true
             }
         }
-        
+        return false
     }
 }

@@ -27,6 +27,10 @@
 		CE3AA40A2247F7F600364CCF /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA4092247F7F600364CCF /* MenuScene.sks */; };
 		CE3AA40C2247FBCB00364CCF /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA40B2247FBCB00364CCF /* MenuScene.swift */; };
 		CE8182682248630500536FEB /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8182672248630500536FEB /* HealthBar.swift */; };
+		CE81826B224988A200536FEB /* ContactCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81826A224988A200536FEB /* ContactCategory.swift */; };
+		CE81826D22499D8A00536FEB /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81826C22499D8A00536FEB /* Fighter.swift */; };
+		CE81826F2249B10000536FEB /* TLAnalogJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81826E2249B10000536FEB /* TLAnalogJoystick.swift */; };
+		CE8182722249C14600536FEB /* hitSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE8182712249C14500536FEB /* hitSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		CE3AA4092247F7F600364CCF /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 		CE3AA40B2247FBCB00364CCF /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		CE8182672248630500536FEB /* HealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
+		CE81826A224988A200536FEB /* ContactCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCategory.swift; sourceTree = "<group>"; };
+		CE81826C22499D8A00536FEB /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
+		CE81826E2249B10000536FEB /* TLAnalogJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TLAnalogJoystick.swift; path = "../../../../../Downloads/TLAnalogJoystick-master 3/AnalogStick Demo/AnalogStick Demo/TLAnalogJoystick.swift"; sourceTree = "<group>"; };
+		CE8182712249C14500536FEB /* hitSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hitSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 			children = (
 				CE08C666224824D600C24673 /* Actor.swift */,
 				CE08C66B22484E9F00C24673 /* Character.swift */,
+				CE81826C22499D8A00536FEB /* Fighter.swift */,
 			);
 			path = Actor;
 			sourceTree = "<group>";
@@ -110,6 +119,7 @@
 		CE08C6682248334400C24673 /* GameController */ = {
 			isa = PBXGroup;
 			children = (
+				CE81826E2249B10000536FEB /* TLAnalogJoystick.swift */,
 				CE08C6692248335E00C24673 /* GameController.swift */,
 			);
 			path = GameController;
@@ -136,6 +146,8 @@
 		CE3AA3CB2247F14100364CCF /* Dragonball Fighters */ = {
 			isa = PBXGroup;
 			children = (
+				CE8182702249C12B00536FEB /* Audio */,
+				CE8182692249888100536FEB /* ContactCategory */,
 				CE08C6682248334400C24673 /* GameController */,
 				CE08C665224824BB00C24673 /* Actor */,
 				CE3AA4062247F7A300364CCF /* Scene */,
@@ -206,6 +218,22 @@
 				CE8182672248630500536FEB /* HealthBar.swift */,
 			);
 			path = HealthBar;
+			sourceTree = "<group>";
+		};
+		CE8182692249888100536FEB /* ContactCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CE81826A224988A200536FEB /* ContactCategory.swift */,
+			);
+			path = ContactCategory;
+			sourceTree = "<group>";
+		};
+		CE8182702249C12B00536FEB /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CE8182712249C14500536FEB /* hitSound.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8182722249C14600536FEB /* hitSound.mp3 in Resources */,
 				CE3AA3D82247F14100364CCF /* Main.storyboard in Resources */,
 				CE3AA3DA2247F14300364CCF /* Assets.xcassets in Resources */,
 				CE3AA3DD2247F14300364CCF /* LaunchScreen.storyboard in Resources */,
@@ -347,13 +376,16 @@
 				CE3AA4052247F4D400364CCF /* MenuButtonController.swift in Sources */,
 				CE8182682248630500536FEB /* HealthBar.swift in Sources */,
 				CE08C66A2248335E00C24673 /* GameController.swift in Sources */,
+				CE81826F2249B10000536FEB /* TLAnalogJoystick.swift in Sources */,
 				CE08C66C22484E9F00C24673 /* Character.swift in Sources */,
 				CE08C660224810EA00C24673 /* DialogScene.swift in Sources */,
 				CE08C662224823EF00C24673 /* GameScene.swift in Sources */,
 				CE3AA40C2247FBCB00364CCF /* MenuScene.swift in Sources */,
 				CE3AA4022247F3FB00364CCF /* MenuButton.swift in Sources */,
 				CE3AA3D52247F14100364CCF /* GameViewController.swift in Sources */,
+				CE81826D22499D8A00536FEB /* Fighter.swift in Sources */,
 				CE08C667224824D600C24673 /* Actor.swift in Sources */,
+				CE81826B224988A200536FEB /* ContactCategory.swift in Sources */,
 				CE08C65A22480D2900C24673 /* ControlsScene.swift in Sources */,
 				CE3AA3CD2247F14100364CCF /* AppDelegate.swift in Sources */,
 			);

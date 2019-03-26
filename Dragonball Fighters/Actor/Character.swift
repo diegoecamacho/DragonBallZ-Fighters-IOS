@@ -11,11 +11,46 @@ import SpriteKit
 
 class Character: Actor {
     
-    var Health : Int = 100
+    var Health : CGFloat?
+    var hitValid: Bool = false
     
+    var Aimdir : Int = 1
+    
+    override init(imageName: String) {
+        super.init(imageName: imageName)
+        Health = CGFloat(size.width)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        Health = CGFloat(size.width)
+        speed = 1
+    }
+    
+    
+
+    func TakeDamage(damage: Int){
+        Health? -= CGFloat(damage)
+    }
+    
+    
+    func Move(x: CGFloat, y:CGFloat){
+        if x > 0{
+            Aimdir = 1
+        }
+        else if x < 0{
+            Aimdir = -1
+        }
+        
+        self.xScale = abs(self.xScale) * CGFloat(-Aimdir)
+        
+        let moveAction = SKAction.moveBy(x: x * speed, y: y * speed, duration: 0.1)
+        
+        self.run(moveAction)
+    }
     
     func MoveUp() -> Void {
-        
         let moveAction = SKAction.moveBy(x: 0, y: 10 * speed, duration: 0.1)
         self.run(moveAction)
     }
@@ -26,12 +61,10 @@ class Character: Actor {
     }
     
     func MoveLeft() -> Void {
-                print("A")
         let moveAction = SKAction.moveBy(x: -10 * speed, y: 0, duration: 0.1)
         self.run(moveAction)
     }
     func MoveRight() -> Void {
-                print("A")
         let moveAction = SKAction.moveBy(x: 10 * speed, y: 0, duration: 0.1)
         self.run(moveAction)
         

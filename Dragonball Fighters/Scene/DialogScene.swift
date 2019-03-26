@@ -11,7 +11,7 @@ import GameplayKit
 
 class DialogScene: SKScene {
     
-    var dialogLines : [String] = ["String 1" , "String 2", "String 3", "String 4"]
+    var dialogLines : [String] = ["Time To Die Vegeto" , "No You Die!", "No You!!!!", "FIGHT!"]
     var dialogText : SKLabelNode?
     
     var currentLine : Int = 0

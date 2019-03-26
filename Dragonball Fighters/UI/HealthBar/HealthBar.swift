@@ -12,6 +12,7 @@ import SpriteKit
 
 class HealthBar: SKSpriteNode {
     var healthBar : SKSpriteNode?
+    var target: Character?
     
     override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
@@ -21,13 +22,23 @@ class HealthBar: SKSpriteNode {
         super.init(coder: aDecoder)
     }
     
-    func loadHealth(){
+    func loadHealth(tracking: Character){
+        
+        target = tracking
         guard let barRef = childNode(withName: "Fill") as? SKSpriteNode else { print("Did not find Fill"); return }
         healthBar = barRef
     }
     
-    func UpdateFill(health: CGFloat){
-        print("Update")
-       healthBar?.scale(to: CGSize(width: (health / 100), height: 1))
+    func UpdateFill(){
+        let health = target!.Health
+        if (health)! <= 0 {
+            
+            let gameScene = MenuScene(fileNamed: "MenuScene")
+            gameScene?.scaleMode = .aspectFill
+            let scene = self.parent as? SKScene
+            scene?.view?.presentScene(gameScene)
+            return
+        }
+       healthBar?.size = CGSize(width: health!, height: 85)
     }
 }
